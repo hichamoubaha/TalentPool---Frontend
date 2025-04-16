@@ -1,0 +1,174 @@
+.notification {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.notification.success {
+    background-color: #ecfdf5;
+    border-left: 4px solid #10b981;
+    color: #065f46;
+}
+
+.notification.error {
+    background-color: #fef2f2;
+    border-left: 4px solid #ef4444;
+    color: #991b1b;
+}
+
+.notification .close-btn {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 15px;
+    opacity: 0.6;
+}
+
+.notification .close-btn:hover {
+    opacity: 1;
+}
+
+/* Animation d'entrée pour les notifications */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.notification {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Styles supplémentaires pour le menu dropdown */
+#userMenuDropdown {
+    transition: all 0.2s ease;
+    transform-origin: top right;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    z-index: 50;
+}
+
+/* Styles pour les boutons */
+button, .btn {
+    transition: all 0.2s ease;
+}
+
+button:hover, .btn:hover {
+    transform: translateY(-1px);
+}
+
+button:active, .btn:active {
+    transform: translateY(0);
+}
+
+/* Tronquer le texte sur plusieurs lignes */
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Styles pour les indicateurs de statut */
+.status-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.status-indicator.pending {
+    background-color: #fbbf24;
+}
+
+.status-indicator.reviewed {
+    background-color: #60a5fa;
+}
+
+.status-indicator.accepted {
+    background-color: #34d399;
+}
+
+.status-indicator.rejected {
+    background-color: #f87171;
+}
+
+/* Style pour les liens actifs dans la navigation */
+.nav-link.active {
+    color: #2563eb;
+    font-weight: 600;
+    border-bottom: 2px solid #2563eb;
+}
+
+/* Styles pour les formulaires */
+input:focus, select:focus, textarea:focus {
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+input.error, select.error, textarea.error {
+    border-color: #ef4444;
+}
+
+/* Style pour les étiquettes de fichier */
+.file-input-label {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.file-input-label:hover {
+    background-color: #e5e7eb;
+}
+
+.file-input {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Style pour le loader */
+.loader {
+    border: 3px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 3px solid #3498db;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Médias queries pour la responsivité */
+@media (max-width: 768px) {
+    .notification {
+        top: 70px;
+        right: 10px;
+        left: 10px;
+        width: calc(100% - 20px);
+    }
+
+    /* Ajustements pour les tableaux */
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
