@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="mb-6">
-        <!-- Hero Section -->
+        <!-- Hero Section page -->
         <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 px-4 sm:px-6 mb-8 rounded-lg shadow-lg">
             <div class="max-w-3xl mx-auto text-center">
                 <h1 class="text-4xl md:text-5xl font-bold mb-4">Trouvez les meilleurs talents ou votre emploi idéal</h1>
