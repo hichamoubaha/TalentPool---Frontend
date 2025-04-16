@@ -42,7 +42,7 @@
                     <p class="text-gray-600">Créez, modifiez et supprimez des annonces en quelques clics. Suivez toutes vos offres d'emploi depuis votre tableau de bord.</p>
                 </div>
 
-                <!-- Feature 2 -->
+                <!-- Feature 2 c -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
