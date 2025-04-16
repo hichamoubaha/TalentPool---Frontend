@@ -12,7 +12,7 @@
         </div>
 
         <div class="bg-white rounded-lg shadow overflow-hidden">
-            <!-- Liste des annonces du recruteur -->
+            <!-- Liste dess annonces du recruteur -->
             @if($announcements->count() > 0)
                 <div class="divide-y divide-gray-200">
                     @foreach($announcements as $announcement)
