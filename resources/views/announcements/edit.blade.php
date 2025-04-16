@@ -75,7 +75,7 @@
                 </div>
             </form>
 
-            <!-- Formulaire de suppression caché -->
+            <!-- Formulaire de suppression cache -->
             <form id="deleteForm" action="{{ route('announcements.destroy', $announcement) }}" method="POST" class="hidden">
                 @csrf
                 @method('DELETE')
