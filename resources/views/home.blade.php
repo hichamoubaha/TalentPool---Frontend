@@ -31,7 +31,7 @@
             <h2 class="text-3xl font-bold text-center mb-12">Une plateforme conçue pour un recrutement efficace</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Feature 1 -->
+                <!-- Feature 1 a -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
