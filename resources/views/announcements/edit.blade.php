@@ -96,7 +96,7 @@
                 const description = document.getElementById('description').value.trim();
                 let isValid = true;
 
-                // Validation côté client
+                // Validation côte client
                 if (!title) {
                     isValid = false;
                     document.getElementById('title').classList.add('border-red-500');
